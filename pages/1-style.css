@@ -245,3 +245,98 @@
   
    
   }
+
+
+   /** Main Section - Style Sheet 1-index - What we do **/
+  
+   main {
+    width: 100%;
+    position: relative;
+  }
+  
+  main p {
+    text-align: center;
+    width: 65%;
+    margin: 2rem auto;
+    line-height: 1.5;
+    font-size: var(--font-medium);
+    font-family: var(--font);
+   
+  }
+  
+  main .container {
+    padding: 4rem;
+    flex-wrap: wrap;
+  }
+  
+  main .grid {
+    width: 100%;
+    display: grid;
+    font-family: var(--font);
+    margin: 2rem 0;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 100%;
+    text-align: center;
+   
+    
+  }
+  
+  main .grid .element {
+    margin: 0.5rem;
+    
+  }
+
+  main .grid .element p {
+    width: 100%;
+    margin: 0;
+    font-size: 14px;
+    padding: 0;
+    
+  }
+  
+  main .grid .element h2 {
+    font-family: var(--font);
+    font-size: var(--font-medium);
+   
+  }
+  
+
+
+  /** icons styles **/
+
+  .holberton_school-icon-ic_sound, .holberton_school-icon-ic_video, .holberton_school-icon-ic_music, .holberton_school-icon-ic_hearing {
+    color: var(--color-red);
+    font-size: 46px;
+  }
+  
+
+  .section-title {
+    width: 100%;
+    margin: auto;
+    font-family: var(--font);
+    font-size: var(--font-large);
+    font-weight: bold;
+    text-align: center;
+  }
+
+  /** media queries Styles on Main */
+
+ 
+  @media (max-width: 480px) {
+    main .container {
+      padding: 4rem 2.5rem;
+    }
+    main p {
+      width: 100%;
+    }
+    main .grid {
+      grid-template-columns: 100%;
+      grid-template-rows: 25% 25% 25% 25%;
+    }
+  
+    main .grid .element p {
+      width: 70%;
+      margin: auto;
+    }
+  
+  }
